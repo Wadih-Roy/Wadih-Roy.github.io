@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="title">
+            <h1>Order Your Smoothie</h1>
+        </div>
+            <form id="smoothie-form"> 
+                <select name="size" id="sizeDropdown">
+                    <option value="">--- Select Size ---</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extraLarge">Extra Large</option>
+                </select>
+
+                <select name="flavor" id="flavorDropdown">
+                    <option value="">--- Select Flavor ---</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="blueberry">Blueberry</option>
+                    <option value="mango">Mango</option>
+                </select>
+                
+                <fieldset>
+                    <legend>Additional Ingredients</legend>
+                    <label><input type="checkbox" name="extra" value="protein">Protein Powder</label>
+                    <label><input type="checkbox" name="extra" value="milk">Almond Milk</label>
+                    <label><input type="checkbox" name="extra" value="nuts">Peanuts</label>
+                </fieldset>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                <label for="intructions">Special Instructions</label>
+                <textarea id="instructions" name="instructions"></textarea>
+
+                <button type="submit" id="submit">Place Order</button>
+            </form> 
+        </div>
+
+        <div class="output">
+            <p id="output"></p>
+        </div>
+
+        <div class="img">
+            <img src="img/smoothieCup-removebg-preview.png" alt="">
+        </div>
+    
+</body>
+</html>

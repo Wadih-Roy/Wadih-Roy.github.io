@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    justify-content: space-evenly;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 500px;
+    height: 700px;
+}
+
+.output{
+    width: 800px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+#sizeDropdown, #flavorDropdown{
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+}
+.title{
+    margin: 10px;
+}
+.cupSize{
+    margin: 10px;
+}
+fieldset{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"]{
+    text-align: center;
+}
